@@ -1,15 +1,46 @@
-main{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: solid 2px black;
-    width: 50%;
-    margin:5% 0 0 25%;
+body{
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(to right, blue, white, rgb(9, 48, 92))
 }
 
+h2{
+    text-transform: uppercase;
+}
+
+main{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid 4px rgb(144, 148, 146);
+    width: 50%;
+    margin:2% 0 0 25%;
+    background-image: linear-gradient(rgb(53, 47, 45), rgb(7, 7, 117), rgb(88, 88, 119));    
+    color: yellow;
+}
+
+
+.paragrafo{
+    display: inline-flex;
+    font-size: 14px;
+}
+
+.paragrafo p{
+    margin-right: 4em
+}
+
+.paragrafo p:last-child{
+    margin-left: 4em;
+}
+
+
+
+
 textarea{
-    width: 60%;
+    width: 30%;
     height: 15em;
-    padding: 10px;
+    padding: 12px;
+    border: solid 2px black;
+    border-radius: 30px;
 }
 
 
@@ -19,17 +50,33 @@ textarea{
 }
 
 
-.selecione select{
+select{
     margin: 2% 0% 7% 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(rgb(102, 94, 92),rgb(36, 36, 146))rgba(120, 120, 155, 0.596)6));    
+    color: rgb(0, 0, 0);
+    width: 30%;
 }
 
-.botoes{
-    margin-bottom: 5%;
-    display: flex;
-    justify-content: space-evenly;
+
+.botoes{;
+    display: inline-block
 }
+
+.labelDescodificar{
+    margin-left: 20%;
+}
+
+
 
 button{
     width: 30%;
     height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border: solid 3px rgba(0, 0, 255, 0.685);
+    border-radius: 60px;
+    text-transform: uppercase;
+    margin: 5% 0 6% 0;
 }

@@ -9,23 +9,30 @@
 </head>
 <body>
     <main>
-            <h1> Decodificador de Mensagens </h1>
-            <p>Insira aqui a sua mensagem: </p>
+            <h2> Decodificador de Mensagens </h2>
+            <div class="paragrafo">
+            <p>Insira a sua mensagem:</p>
+            <p>Resultado: </p>
+            </div>
             <form>
-            <textarea>
-            </textarea>
-        <div class="selecione">
-            <p id="paragrafoSelecione">Selecione a criptografia: </p>
-            <select name="select" class="select">
-                <option value="cifra de cesar">Cifra de Cesar</option>
-                <option value="base64">Base 64</option>
-            </select>
-        </div>
-        <div class="botoes">
-            <button type="submit" value="codificar">Codificar</button>
-            <button type="submite value="descodificar"> Descodificar</button>
-        </div>
-        </form>
+                <textarea></textarea>
+                <textarea></textarea>
+                <div class="selecione">
+                    <p>Selecione a criptografia: </p>
+                    <select name="select" class="select">
+                        <option value="cifra de cesar">Cifra de Cesar</option>
+                        <option value="base64">Base 64</option>
+                    </select>
+                </div>
+                <div class="botoes">
+                    <label class="labelCodificar">Codificar</label>
+                        <input type="radio" name="codificar">
+                    <label class="labelDescodificar">Descodificar</label>
+                        <input type="radio" name="codificar">
+                    <button type="submit" value="codificar">Codificar</button>
+                </div>
+            </form>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
