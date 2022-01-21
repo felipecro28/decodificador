@@ -1,0 +1,35 @@
+main{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid 2px black;
+    width: 50%;
+    margin:5% 0 0 25%;
+}
+
+textarea{
+    width: 60%;
+    height: 15em;
+    padding: 10px;
+}
+
+
+.selecione p{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.selecione select{
+    margin: 2% 0% 7% 0;
+}
+
+.botoes{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 30%;
+    height: 40px;
+}
