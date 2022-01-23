@@ -10,25 +10,22 @@
 <body>
     <main>
             <h2> Decodificador de Mensagens </h2>
-            <div class="paragrafo">
-            <p>Insira a sua mensagem:</p>
-            <p>Resultado: </p>
-            </div>
             <form>
-                <textarea></textarea>
-                <textarea></textarea>
+                <textarea class="mensagem" placeholder="Insira a sua mensagem"></textarea>
+                <textarea class="mensagem" placeholder="Mensagem Codificada"></textarea>
                 <div class="selecione">
                     <p>Selecione a criptografia: </p>
-                    <select name="select" class="select">
-                        <option value="cifra de cesar">Cifra de Cesar</option>
-                        <option value="base64">Base 64</option>
+                    <select name="select" class="seletor" onchange="yesnoCheck(this)";>
+                        <option class="cifra" value="cifraDeCesar">Cifra de Cesar</option>
+                        <option class = "base" value="base64">Base 64</option>
                     </select>
                 </div>
                 <div class="botoes">
+                    <textarea class="chave" rows="2" cols="30" placeholder="Chave de Deslocamento"></textarea><br><br>
                     <label class="labelCodificar">Codificar</label>
-                        <input type="radio" name="codificar">
+                        <input type="radio" name="codificar" class="inputCodificar">
                     <label class="labelDescodificar">Descodificar</label>
-                        <input type="radio" name="codificar">
+                        <input type="radio" name="codificar" class="inputDescodificar">
                     <button type="submit" value="codificar">Codificar</button>
                 </div>
             </form>
