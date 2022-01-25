@@ -42,6 +42,15 @@ main{
     text-align: center;
 }
 
+.mensagemCodificada{
+    width: 30%;
+    height: 15em;
+    padding: 12px;
+    border: solid 2px black;
+    border-radius: 30px;
+    text-align: center;
+}
+
 .selecione p{
     font-weight: bold;
     text-decoration: underline;

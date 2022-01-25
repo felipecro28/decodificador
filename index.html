@@ -10,9 +10,8 @@
 <body>
     <main>
             <h2> Decodificador de Mensagens </h2>
-            <form>
-                <textarea class="mensagem" placeholder="Insira a sua mensagem"></textarea>
-                <textarea class="mensagem" placeholder="Mensagem Codificada"></textarea>
+                <textarea class="mensagem" id="mensagemCripto" placeholder="Insira a sua mensagem"></textarea>
+                <textarea class="mensagemCodificada" placeholder="Mensagem Codificada"></textarea>
                 <div class="selecione">
                     <p>Selecione a criptografia: </p>
                     <select name="select" class="seletor" onchange="yesnoCheck(this)";>
@@ -26,9 +25,9 @@
                         <input type="radio" name="codificar" class="inputCodificar">
                     <label class="labelDescodificar">Descodificar</label>
                         <input type="radio" name="codificar" class="inputDescodificar">
-                    <button type="submit" value="codificar">Codificar</button>
+                    <button type="push" value="codificar" onclick="criptografar()">Codificar</button>
                 </div>
-            </form>
+            
     </main>
     <script src="index.js"></script>
 </body>
